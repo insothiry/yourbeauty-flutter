@@ -1,0 +1,49 @@
+name: yourbeauty
+description: "A new Flutter project."
+publish_to: none
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.1
+  intl: ^0.17.0
+  url_launcher: ^6.0.15
+  cupertino_icons: ^1.0.6
+  iconsax: ^0.0.8
+  get_storage: ^2.0.3
+
+  smooth_page_indicator: ^1.1.0
+
+  get: ^4.6.6
+  shared_preferences: ^2.2.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  logger: ^2.0.2
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logos/
+    - assets/icons/
+    - assets/images/on_boarding_images/
+    - assets/images/
+
+  fonts:
+    - family: Jost
+      fonts:
+        - asset: assets/fonts/Jost-VariableFont_wght.ttf
+        - asset: assets/fonts/Jost-Italic-VariableFont_wght.ttf
+          style: italic
+    - family: Open Sans
+      fonts:
+        - asset: assets/fonts/OpenSans-VariableFont.ttf
+        - asset: assets/fonts/OpenSans-Italic-VariableFont.ttf
+          weight: 700
