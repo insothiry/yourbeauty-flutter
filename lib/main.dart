@@ -5,24 +5,28 @@ import 'package:yourbeauty/features/authentication/screens/login/login.dart';
 import 'package:yourbeauty/features/authentication/screens/onBoarding/onboarding.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),
       routes: {
-        '/onboarding': (context) => OnBoardingScreen(),
-        '/LoginScreen': (context) => LoginScreen(),
+        '/onboarding': (context) => const OnBoardingScreen(),
+        '/LoginScreen': (context) => const LoginScreen(),
       },
     );
   }
 }
 
 class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
+
   @override
   _SplashScreenState createState() => _SplashScreenState();
 }
