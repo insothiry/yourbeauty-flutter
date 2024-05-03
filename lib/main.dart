@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: const SplashScreen(),
       routes: {
         '/onboarding': (context) => const OnBoardingScreen(),
         '/LoginScreen': (context) => const LoginScreen(),

@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:yourbeauty/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:yourbeauty/features/authentication/screens/signup/signup.dart';
+import 'package:yourbeauty/navigation_menu.dart';
 import 'package:yourbeauty/utils/constants/colors.dart';
 import 'package:yourbeauty/utils/constants/sizes.dart';
 import 'package:yourbeauty/utils/constants/text_strings.dart';
@@ -66,7 +67,7 @@ class TLoginForm extends StatelessWidget {
 
               // Forget password
               TextButton(
-                onPressed: () => Get.to(() => const ForgetPassword()),
+                onPressed: () => Get.off(() => const NavigationMenu()),
                 child: const Text(
                   TTexts.forgetPassword,
                   style: TextStyle(
@@ -84,7 +85,7 @@ class TLoginForm extends StatelessWidget {
           SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(() => const NavigationMenu()),
                   style: ElevatedButton.styleFrom(
                       backgroundColor: TColors.primaryColor),
                   child: const Text(
